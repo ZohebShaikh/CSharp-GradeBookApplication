@@ -34,7 +34,6 @@ namespace GradeBook.GradeBooks
                 return 'D';
             else
                 return 'F';
-            //if (Students.)
         }
 
         public override void CalculateStatistics()
