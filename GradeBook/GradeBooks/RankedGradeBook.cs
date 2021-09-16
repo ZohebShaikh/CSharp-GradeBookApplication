@@ -16,8 +16,8 @@ namespace GradeBook.GradeBooks
         {
             if (Students.Count < 5)
             {
-                return 'F';
                 throw new InvalidOperationException();
+                return 'F';
             }
 
             var threshold = (int)Math.Ceiling(Students.Count * 0.2);
