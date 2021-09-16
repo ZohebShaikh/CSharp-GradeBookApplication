@@ -7,7 +7,7 @@ namespace GradeBook.GradeBooks
 {
     public class RankedGradeBook:BaseGradeBook
     {
-        public RankedGradeBook(string name) : base(name)
+        public RankedGradeBook(string name, bool isWeighted) : base(name, isWeighted)
         {
             Type = Enums.GradeBookType.Ranked;
         }
@@ -34,6 +34,7 @@ namespace GradeBook.GradeBooks
                 return 'D';
             else
                 return 'F';
+            //if (Students.)
         }
 
         public override void CalculateStatistics()
